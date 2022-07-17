@@ -1,0 +1,411 @@
+body{
+    font-family: Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+.logo{
+    color: #fff;
+    font-size: 22px;
+    line-height: 60px;
+    padding-left: 160px;
+    float: left;
+}
+.menu{
+  float: left;
+    padding-left: 150px;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 100% 90%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;   
+}
+
+.title__container{
+    float: left;
+    margin: 340px 0px 0px 120px;
+    color: #2c384a;
+    text-align: center;
+}
+.title__container h1{
+    font-size: 45px;
+    font-weight: bold;
+    
+}
+.title__container h4{
+    margin-top: 40px;
+    font-size: 22px;
+    color: #79818d
+    
+}
+.title__container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px;
+    
+}
+
+.about_me h2{
+    text-align: center;
+    width: 105px;
+    font-size: 22px;
+    margin: 10px auto;
+    
+}
+.about_me {
+    width: 700px;
+    margin: 0px auto;
+    
+}
+.about_me img{
+    display: block;
+    margin: 0px auto;
+}
+.about_me hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 10px auto;
+}
+
+.about_me p{
+    margin-top: 30px;
+}
+
+.about_me .about_me_p2{
+    margin-top: 40px;
+}
+
+.about_me .download_rezume{
+    display: block;
+    height: 30px;
+    width: 180px;
+    border: 2px solid #6d7682;
+    border-radius: 5px;
+    font-size: 13px;
+    background: url(../img/input.png) 11px 5px/auto no-repeat;
+    margin: 50px auto;
+    
+}
+
+.i_can{
+    width: 100%;
+    height: 50%;
+    background: url(../img/bg2.jpg) center/cover no-repeat;
+    margin-top: 100px;
+}
+
+.what_i_can h2{
+    text-align: center;
+    width: 150px;
+    font-size: 22px;
+    margin: 10px auto;
+    
+}
+
+.what_i_can hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 10px auto;
+}
+
+.what_i_can{
+    width: 850px;
+    margin: 0px auto;
+}
+
+.skills{
+    float: left;
+    width: 170px;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 10%;
+}
+
+.clear{
+    clear: left;
+}
+
+.skills h3{
+    color: #d17700;
+}
+
+.price h2{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.price img{
+    margin-top: 20px;
+}
+
+.price hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 10px auto;
+}
+
+.price{
+    width: 1150px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.price .div_case{
+    float: left;
+    width: 520px;
+    height: 180px;   
+}
+
+.price .div_case input{
+    border: 1px solid #000;
+    margin-top: 10px;
+    width: 210px;
+    height: 35px;
+    background: color #63b5ae;
+}
+
+.price .div_case h4{
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.price .div_nameProject{
+    width: 1100px;
+    height: 110px;
+    margin-top: 25px;
+}
+
+.price .div_nameProject h4{
+    font-size: 22px;
+    text-align: left;
+}
+
+.price .div_nameProject p{
+    text-align: left;
+}
+
+.raschet_stoimosti h2{
+    font-size: 26px;
+    width: 324px;
+    margin: 100px auto;
+}
+.choice h4{
+    font-size: 20px;
+}
+.choice{
+     text-align: left;
+    margin-top: 35px;
+    margin-left: 10%;
+}
+
+.choice select{
+    width: 900px;
+    height: 56px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 10px; 
+}
+
+.rezultat{
+    border-top: 1px solid #000;
+    margin: 20px 100px 0px 115px;
+    width: 900px;
+    text-align: left;
+}
+.sroki{
+    text-align: left;
+    
+}
+.nol1{
+   margin-left: 845px;
+    font-size: 20px; 
+}
+.nol2{
+    margin-left: 814px;
+    font-size: 20px;
+}
+
+.statistic{
+    width: 100%;
+    height: 50%;
+    background: url(../img/bg3.jpg) center/cover no-repeat;
+    margin-top: 150px;
+}
+.stat h2{
+    text-align: center;
+    font-size: 22px;
+}
+
+.stat hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 10px auto;
+}
+
+.statist{
+    float: left;
+    width: 180px;
+    margin-top: 150px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.statist h3{
+    margin-top: 15px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.statist p{
+    margin-top: 15px;
+}
+
+.reviews_for_me h2{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.reviews_for_me hr{
+   height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 10px auto; 
+}
+
+.reviews_for_me {
+    text-align: center;
+    width: 700px;
+    margin-left: 280px;
+}
+
+.reviews_for_me p{
+    margin-top: 15px;
+}
+
+.reviews_for_me img{
+    margin-top: 20px;
+}
+.contacts{
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg4.jpg) center/cover no-repeat;
+    margin-top: 150px;
+
+}
+
+.my_contacts h2{
+    text-align: center;
+    font-size 35px;
+    color: #fff;
+    
+}
+
+.my_contacts hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 60px;
+    margin: 10px auto;
+}
+
+.textLorem{
+    margin-top:50px;
+    color: #fff;
+    text-align: center;
+}
+.inf{
+    float: left;
+    width: 150px;;
+    text-align: center;
+    color: #fff;
+    margin-left: 210px;
+    margin-top: 50px; 
+}
+
+.soobchenie h3{
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.soobchenie .input_t1{
+    margin-left: 250px;
+    width: 360px;
+    height: 40px; 
+}
+
+.soobchenie .input_t2{
+    width: 360px;
+    height: 40px;
+    margin-left: 25px;
+}
+
+.soobchenie .input_t3{
+   margin-left: 565px;
+    margin-top: 40px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 130px;
+    height: 45px;
+    background: none;
+    color: #fff;
+}
+
+.soobchenie textarea{
+    margin-left: 250px;
+    margin-top: 17px;
+    width: 750px;
+}
+
+.kartinki{
+    float: left;
+    margin-left: 50px;
+}
+
+.vse_kartinki{
+    margin-left: 380px;
+    margin-top: 150px;
+}
+
+.konec{
+    width: 100%;
+    height: 95px;
+    background: #344051;
+}
+
+.konec p{
+    line-height: 95px;
+    padding-left: 500px;
+    color: #fff;
+}
+
+
+

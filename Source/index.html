@@ -9,6 +9,8 @@
     <meta property="og:title" content="Это моя первая страница)">
     
     <title>Андрей Браун - веб разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
 <header>
@@ -36,90 +38,184 @@
 
 <div class="me"><div class="about_me">
 <h2>ОБО МНЕ</h2>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nesciunt aliquam expedita, quidem aspernatur velit blanditiis vitae commodi praesentium sit at veniam a possimus atque. Et distinctio eius veniam assumenda!</p>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reprehenderit facilis sapiente, deserunt sed sint neque maiores esse quasi nulla ipsam itaque sunt, praesentium doloremque.</p>
-   <input type="submit" value="Скачать резюме">                           
+ <hr>
+  <img src="img/myphoto.png" alt="">
+   <p class="about_me_p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nesciunt aliquam expedita, quidem aspernatur velit blanditiis vitae commodi praesentium sit at veniam a possimus atque. Et distinctio eius veniam assumenda!</p>
+   <p class="about_me_p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reprehenderit facilis sapiente, deserunt sed sint neque maiores esse quasi nulla ipsam itaque sunt, praesentium doloremque.</p>
+   <input type="submit" value="Скачать резюме" class="download_rezume">                           
 </div></div>
 
 <div class="i_can"><div class="what_i_can">
  <h2>ЧТО Я УМЕЮ</h2>
-   <ul>
-    <li><h4>Веб-дизайн</h4><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, alias!</span></li> 
-     
-    <li><h4>Разработка</h4><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio velit asperiores sapiente!</span></li> 
-      
-    <li><h4>СЕО-Оптимизация</h4><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolores explicabo.</span></li> 
-      
-    <li><h4>Маркетинг</h4><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deleniti doloribus illum natus doloremque.</span></li>                    
-   </ul>          
+  <hr>
+   <div class="skills">
+       <img src="img/pc.png" alt="">
+       <h3>Веб-дизайн</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ab veritatis nemo odio.</p>
+   </div>
+   
+   <div class="skills">
+       <img src="img/log.png" alt="">
+       <h3>Разработка</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore enim reprehenderit provident earum totam deserunt.</p>
+       </div>
+       
+    <div class="skills">
+        <img src="img/log2.png" alt="">
+        <h3>СЕО-Оптимизация</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quae inventore totam impedit voluptates! Ipsa esse similique sit voluptas obcaecati.</p>
+        </div>
+        
+    <div class="skills">
+        <img src="img/log3.png" alt="">
+        <h3>Маркетинг</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit a at impedit voluptates modi quas cupiditate earum eligendi!</p>
+    </div>    
+     <div class="clear"></div>  
+             
 </div></div>
 
 <div class="cases"><div class="price">
    <h2>КЕЙСЫ</h2>
-   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, dolorum?</span>
-   <h4>CLIENT:</h4>
-   <span>Какая-то компания</span>
+   <hr>
+   <p class="plorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, dolorum?</p>
+   <img src="img/photo.png" alt="">
+   <div class="div_case"><h4>CLIENT:</h4>
+   <p>Какая-то компания</p>
     <h4>WEBSITE:</h4>
-    <span>http://www.somedomain.com</span>
+    <p>http://www.somedomain.com</p>
     <input type="submit" value="VISIT LIVE SITE">
-    <h4>НАЗВАНИЕ ПРОЕКТА</h4>
-    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit unde laudantium sed, dignissimos qui eveniet voluptas nostrum quo, libero ea facere cumque alias molestiae in aliquid. Repellat quisquam repudiandae consequuntur iusto perspiciatis nesciunt magni? Id!</span>  
+    </div>
+    <div class="div_nameProject"><h4>Название проекта</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit unde laudantium sed, dignissimos qui eveniet voluptas nostrum quo, libero ea facere cumque alias molestiae in aliquid. Repellat quisquam repudiandae consequuntur iusto perspiciatis nesciunt magni? Id!</p> 
+    </div> 
 
-<h2>Расчет стоимости</h2>
+<div class="raschet_stoimosti"><h2>Расчет стоимости</h2>
 
-<h4>ТИП САЙТА</h4> 
+<div class="choice"><h4>ТИП САЙТА</h4> 
 <select name="list1" id="1">
     <option value="opt1">Выберите пункт...</option>
 </select> 
+</div>
 
-<h4>ДИЗАЙН</h4>  
+<div class="choice"><h4>ДИЗАЙН</h4>  
 <select name="list2" id="2">
     <option value="opt2">Выберите пункт...</option>
 </select>
+  </div>
    
-<h4>АДАПТИВНОСТЬ</h4> 
+<div class="choice"><h4>АДАПТИВНОСТЬ</h4> 
 <select name="list3" id="3">
     <option value="opt3">Выберите пункт...</option>
 </select> 
+</div>
 
-<span>Сроки      0</span>
-<span>Стоимость  0</span>          
+<div class="rezultat">
+<span class="sroki">Сроки</span>
+<span class="nol1">0</span>
+<br>
+<span class="sroki">Стоимость</span>
+<span class="nol2">0</span>
+
+
+</div>
+  </div>          
 </div></div>
 
 <div class="statistic"><div class="stat">
    <h2>НЕМНОГО СТАТИСТИКИ</h2>
-   <ul>   
-   <li><h4>120</h4><span>СЧАСТЛИВЫХ КЛИЕНТОВ</span></li>
-   <li><h4>4,600</h4><span>ЧАСОВ РАБОТЫ</span></li>
-   <li><h4>340</h4><span>ПРОЕКТОВ ЗАВЕРШЕНО</span></li>
-   <li><h4>23</h4><span>НАГРАД ПОЛУЧЕНО</span></li>  
-   </ul>    
+   <hr>
+   <div class="statist">
+       <img src="img/logo1.png" alt="">
+       <h3>120</h3>
+       <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+   </div>
+   
+    <div class="statist">
+        <img src="img/logo2.png" alt="">
+        <h3>4,600</h3>
+        <p>ЧАСОВ РАБОТЫ</p>
+    </div> 
+    
+    <div class="statist">
+        <img src="img/logo3.png" alt="">
+        <h3>340</h3>
+        <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+    </div> 
+    
+    <div class="statist">
+        <img src="img/logo4.png" alt="">
+        <h3>23</h3>
+        <p>НАГРАД ПОЛУЧЕНО</p>
+    </div> 
+    <div class="clear"></div>         
 </div></div>
 
 <div class="reviews"><div class="reviews_for_me">
    <h2>ОТЗЫВЫ</h2>
-   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore deserunt explicabo officiis odit aut voluptas nesciunt eligendi iusto doloribus earum!</span>
-   <br><span>Михаил, Ген директор ПАО "Газпром".</span>  
+   <hr>
+   <img src="img/mihail.png" alt="">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore deserunt explicabo officiis odit aut voluptas nesciunt eligendi iusto doloribus earum!</p>
+   <p>Михаил, Ген директор ПАО "Газпром".</p>  
 </div></div>
 
 <div class="contacts"><div class="my_contacts">
-   <h2>МОИ КОНТАКТЫ</h2>
-   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, quis.</span>
-   <ol>
-       <li>Санкт-Петербург<br>Невский проспект11</li>
-       <li>info@companyname.com</li>
-       <li>+7 999 999-99-99</li>
-   </ol>
+    <h2>МОИ КОНТАКТЫ</h2>
+   <hr>
+   <p class="textLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam iure et ipsum quod aliquid, itaque fugiat, quos nulla? Explicabo, blanditiis.</p>
+   <div class="inf">
+       <img src="img/geo.png" alt="">
+       <p>Санкт-Петербург</p>
+       <p>Невский проспект 11</p>
+   </div>
    
-   <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+   <div class="inf">
+       <img src="img/mail.png" alt="">
+       <p>info@companyname.com</p>
+   </div>
+   
+   <div class="inf">
+       <img src="img/tel.png" alt="">
+       <p>+7 999 999 99-99</p>
+   </div>
+   <div class="clear"></div>
+   
+   <div class="soobchenie"><h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
    <form action="s">
-   <input type="text" name="input_text1" placeholder="Имя">
-   <input type="text" name="input_text2" placeholder="Email">
+   <input type="text" name="input_text1" placeholder="Имя" class="input_t1">
+   <input type="text" name="input_text2" placeholder="Email" class="input_t2">
+   <br>
     <textarea name="text_area" id="5" cols="90" rows="10" placeholder="Сообщение"></textarea>
-    <input type="submit" value="Отправить">
+    <br>
+    <input type="submit" value="Отправить" class="input_t3">
     </form> 
-    <span>CopyrightⒸ 2021 Андрей Браун. Design by Web</span>
-</div></div>
+    <div class="vse_kartinki"><div class="kartinki">
+        <img src="img/fb.png" alt="">
+        </div>
+        <div class="kartinki"><img src="img/tvit.png" alt="">
+        </div>
+        <div class="kartinki"><img src="img/bool.png" alt="">
+        </div>
+        <div class="kartinki"><img src="img/kat.png" alt="">
+        </div>
+        <div class="kartinki"><img src="img/inst.png" alt="">
+        </div>
+        <div class="kartinki"><img src="img/in.png" alt="">
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    
+</div>
+
+<div class="imHere">
+    <img src="img/map.png" alt="">
+</div>
+
+<nav class="konec">
+    <p>CopyrightⒸ 2021 Андрей Браун. Design by Web</p>
+</nav>
 
 </body>
 </html>
