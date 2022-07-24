@@ -13,83 +13,119 @@
     <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
+
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+
+
 <header>
     
     <nav>
         <div class="logo">Андрей Браун</div>
         <div class="menu"><ul>
-            <li>Обо мне</li>
-            <li>Услуги</li>
-            <li>Кейсы</li>
-            <li>Прайс</li>
-            <li>Отзывы</li>
-            <li>Контакты</li>         
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Кейсы</a></li>
+            <li><a href="#">Прайс</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>         
         </ul></div>
     </nav>
     
 </header>
 
-<div class="main"><div class="title__container">
+
+<div class="title_menu"><div class="title__container">
     <h1>Привет <br>Я Андрей Браун</h1>
     <h4>Фулл стек веб - разработчик</h4>
-    <input type="submit" value="Обо мне">
-    <input type="submit" value="Мои работы">
+    <input type="button" value="Обо мне">
+    <input type="button" value="Мои работы">
 </div></div>
 
+<main>
+<section>
 <div class="me"><div class="about_me">
 <h2>ОБО МНЕ</h2>
  <hr>
   <img src="img/myphoto.png" alt="">
+  
+    <article>
    <p class="about_me_p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nesciunt aliquam expedita, quidem aspernatur velit blanditiis vitae commodi praesentium sit at veniam a possimus atque. Et distinctio eius veniam assumenda!</p>
    <p class="about_me_p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reprehenderit facilis sapiente, deserunt sed sint neque maiores esse quasi nulla ipsam itaque sunt, praesentium doloremque.</p>
-   <input type="submit" value="Скачать резюме" class="download_rezume">                           
+   </article>
+   
+   <input type="button" value="Скачать резюме" class="download_rezume">                           
 </div></div>
-
+ </section>
+ 
+<section>
 <div class="i_can"><div class="what_i_can">
  <h2>ЧТО Я УМЕЮ</h2>
   <hr>
+  
+  <article>
+  
+  
    <div class="skills">
        <img src="img/pc.png" alt="">
        <h3>Веб-дизайн</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ab veritatis nemo odio.</p>
-   </div>
+        </div>
    
-   <div class="skills">
+   
+     <div class="skills">
        <img src="img/log.png" alt="">
        <h3>Разработка</h3>
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore enim reprehenderit provident earum totam deserunt.</p>
        </div>
        
-    <div class="skills">
+       
+        <div class="skills">
         <img src="img/log2.png" alt="">
         <h3>СЕО-Оптимизация</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quae inventore totam impedit voluptates! Ipsa esse similique sit voluptas obcaecati.</p>
         </div>
         
-    <div class="skills">
+        
+        <div class="skills">
         <img src="img/log3.png" alt="">
         <h3>Маркетинг</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit a at impedit voluptates modi quas cupiditate earum eligendi!</p>
-    </div>    
+        </div>
+        
+    </article>
+        
      <div class="clear"></div>  
              
 </div></div>
-
+ </section>
+ 
+ 
+<section>
 <div class="cases"><div class="price">
    <h2>КЕЙСЫ</h2>
    <hr>
+   <article>
    <p class="plorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, dolorum?</p>
    <img src="img/photo.png" alt="">
+   
    <div class="div_case"><h4>CLIENT:</h4>
    <p>Какая-то компания</p>
     <h4>WEBSITE:</h4>
     <p>http://www.somedomain.com</p>
-    <input type="submit" value="VISIT LIVE SITE">
+    <input type="button" value="VISIT LIVE SITE">
     </div>
+    
     <div class="div_nameProject"><h4>Название проекта</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit unde laudantium sed, dignissimos qui eveniet voluptas nostrum quo, libero ea facere cumque alias molestiae in aliquid. Repellat quisquam repudiandae consequuntur iusto perspiciatis nesciunt magni? Id!</p> 
     </div> 
+    </article>
 
+<article>
 <div class="raschet_stoimosti"><h2>Расчет стоимости</h2>
 
 <div class="choice"><h4>ТИП САЙТА</h4> 
@@ -111,20 +147,28 @@
 </div>
 
 <div class="rezultat">
+
 <span class="sroki">Сроки</span>
 <span class="nol1">0</span>
 <br>
 <span class="sroki">Стоимость</span>
 <span class="nol2">0</span>
 
-
 </div>
-  </div>          
-</div></div>
 
+  </div>     
+  </article>
+       
+</div></div>
+</section>
+
+
+<section>
 <div class="statistic"><div class="stat">
    <h2>НЕМНОГО СТАТИСТИКИ</h2>
    <hr>
+   
+   <article>
    <div class="statist">
        <img src="img/logo1.png" alt="">
        <h3>120</h3>
@@ -148,20 +192,30 @@
         <h3>23</h3>
         <p>НАГРАД ПОЛУЧЕНО</p>
     </div> 
-    <div class="clear"></div>         
+    <div class="clear"></div> 
+    </article> 
+           
 </div></div>
+</section>
 
+<section>
 <div class="reviews"><div class="reviews_for_me">
    <h2>ОТЗЫВЫ</h2>
    <hr>
    <img src="img/mihail.png" alt="">
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore deserunt explicabo officiis odit aut voluptas nesciunt eligendi iusto doloribus earum!</p>
-   <p>Михаил, Ген директор ПАО "Газпром".</p>  
+   <article>
+   <p class="rev_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore deserunt explicabo officiis odit aut voluptas nesciunt eligendi iusto doloribus earum!</p>
+   <p class="misha_p">Михаил, Ген директор ПАО "Газпром".</p> 
+   </article>
+    
 </div></div>
+</section>
 
+<section>
 <div class="contacts"><div class="my_contacts">
     <h2>МОИ КОНТАКТЫ</h2>
    <hr>
+   <article>
    <p class="textLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam iure et ipsum quod aliquid, itaque fugiat, quos nulla? Explicabo, blanditiis.</p>
    <div class="inf">
        <img src="img/geo.png" alt="">
@@ -187,10 +241,11 @@
    <br>
     <textarea name="text_area" id="5" cols="90" rows="10" placeholder="Сообщение"></textarea>
     <br>
-    <input type="submit" value="Отправить" class="input_t3">
+    <input type="button" value="Отправить" class="input_t3">
     </form> 
-    <div class="vse_kartinki"><div class="kartinki">
-        <img src="img/fb.png" alt="">
+    <div class="vse_kartinki">
+      
+        <div class="kartinki"><img src="img/fb.png" alt="">
         </div>
         <div class="kartinki"><img src="img/tvit.png" alt="">
         </div>
@@ -202,20 +257,25 @@
         </div>
         <div class="kartinki"><img src="img/in.png" alt="">
           </div>
+          
         </div>
         <div class="clear"></div>
       </div>
+      
+      </article>
     </div>
     
 </div>
+</section>
 
-<div class="imHere">
-    <img src="img/map.png" alt="">
-</div>
+</main>
 
-<nav class="konec">
+<div class="imHere"></div>
+
+<footer class="konec">
+   
     <p>CopyrightⒸ 2021 Андрей Браун. Design by Web</p>
-</nav>
+</footer>
 
 </body>
 </html>

@@ -1,10 +1,80 @@
 body{
     font-family: Arial, sans-serif;
 }
+
+.preloader{
+    position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+ background: #e0e0e0;
+    z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+
+
 nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
 }
 .logo{
     color: #fff;
@@ -12,7 +82,12 @@ nav{
     line-height: 60px;
     padding-left: 160px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease ;
+    animation: comming 2s ease;
 }
+
+
 .menu{
   float: left;
     padding-left: 150px;
@@ -24,10 +99,55 @@ nav{
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: menuPadaet 1s ease forwards ;
+    -o-animation: menuPadaet 1s ease forwards;
+    animation: menuPadaet 1s ease forwards;
+    opacity: 0;
 }
-.main{
+
+.menu li a:visited{
+    color: #fff;
+}
+
+
+.menu li a{
+    transition: all 0.3s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:hover{
+    color: #d17700;
+}
+
+.menu li a:active{
+    transform: scale(1.1);
+}
+
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+
+.title_menu{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 100% 90%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;   
 }
 
@@ -36,7 +156,16 @@ nav{
     margin: 340px 0px 0px 120px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: textCenter 1s forwards ;
+    -o-animation: textCenter 1s forwards ;
+    animation: textCenter 1s forwards ;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s; 
 }
+
+
 .title__container h1{
     font-size: 45px;
     font-weight: bold;
@@ -57,8 +186,57 @@ nav{
     font-size: 13px;
     padding: 0px 16px;
     margin: 58px 14px 0px 14px;
+    transition: all 0.2s;
+    transform: scale(1);
     
 }
+
+.title__container input:hover{
+    background: #344051;
+    color: white;
+    
+}
+
+.title__container input:active{
+    transform: scale(1.2);
+
+}
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes menuPadaet{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes textCenter{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 120px;
+    }
+}
+
+
+
+
+
 
 .about_me h2{
     text-align: center;
@@ -75,7 +253,10 @@ nav{
 .about_me img{
     display: block;
     margin: 0px auto;
+    
 }
+
+
 .about_me hr{
     height: 4px;
     border: none;
@@ -86,11 +267,31 @@ nav{
 
 .about_me p{
     margin-top: 30px;
+    opacity: 0;
+    -webkit-animation: aboutMe 2s forwards;
+    -o-animation: aboutMe 2s forwards;
+    animation: aboutMe 2s forwards
 }
+
+
 
 .about_me .about_me_p2{
     margin-top: 40px;
 }
+
+@keyframes aboutMe{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    
+    to{
+        opacity: 1;
+        margin-left 0;
+    }
+}
+
+
 
 .about_me .download_rezume{
     display: block;
@@ -101,13 +302,35 @@ nav{
     font-size: 13px;
     background: url(../img/input.png) 11px 5px/auto no-repeat;
     margin: 50px auto;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.about_me .download_rezume:hover{
+    background: #6d7682;
+    color: white;
     
 }
+
+.about_me .download_rezume:active{
+    transform: scale(1.2);
+
+}
+
+.about_me img{
+    transition: all 2s;
+    transform: rotate(0deg);
+}
+
+.about_me img:hover{
+    transform: rotate(360deg);
+}
+
 
 .i_can{
     width: 100%;
     height: 50%;
-    background: url(../img/bg2.jpg) center/cover no-repeat;
+    background: url(../img/bg2.jpg) center/cover fixed no-repeat;
     margin-top: 100px;
 }
 
@@ -138,7 +361,42 @@ nav{
     text-align: center;
     margin-right: 40px;
     margin-top: 10%;
+    margin-bottom: 50px; 
+    opacity: 0;
+    -webkit-animation: Skills 1s ease forwards;
+    -o-animation: Skills 1s ease forwards;
+    animation: Skills 1s ease forwards;
 }
+
+.skills:nth-child(1){
+    animation-delay: 0.4s;
+}
+
+.skills:nth-child(2){
+    animation-delay: 1s;
+}
+
+.skills:nth-child(3){
+    animation-delay: 1.6s;
+}
+
+.skills:nth-child(4){
+    animation-delay: 2.2s;
+}
+
+@keyframes Skills{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+
+
 
 .clear{
     clear: left;
@@ -185,6 +443,16 @@ nav{
     height: 35px;
     background: #63b5ae;
     color: #fff;
+    transition: all 0.2s;
+     transform: scale(1);
+}
+
+.price .div_case input:active{
+    transform: scale(1.2);
+}
+
+.price .div_case input:hover{
+    border: 1px solid brown; 
 }
 
 .price .div_case h4{
@@ -219,6 +487,10 @@ nav{
      text-align: left;
     margin-top: 35px;
     margin-left: 10%;
+    opacity: 0
+    -webkit-animation: choice 2s forwards;
+    -o-animation: choice 2s forwards;
+    animation: choice 2s forwards;
 }
 
 .choice select{
@@ -227,6 +499,20 @@ nav{
     border: 1px solid #000;
     border-radius: 5px;
     margin-top: 10px; 
+    
+}
+
+@keyframes choice{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    
+    to{
+    opacity: 1;
+        margin-left: 112px;
+    }
+    
 }
 
 .rezultat{
@@ -251,7 +537,7 @@ nav{
 .statistic{
     width: 100%;
     height: 50%;
-    background: url(../img/bg3.jpg) center/cover no-repeat;
+    background: url(../img/bg3.jpg) center/cover fixed no-repeat;
     margin-top: 150px;
 }
 .stat h2{
@@ -272,6 +558,7 @@ nav{
     width: 180px;
     margin-top: 150px;
     margin-left: 100px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -281,6 +568,8 @@ nav{
     font-weight: bold;
 }
 
+
+
 .statist p{
     margin-top: 15px;
 }
@@ -288,7 +577,7 @@ nav{
 .reviews_for_me h2{
     text-align: center;
     font-size: 22px;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .reviews_for_me hr{
@@ -305,13 +594,35 @@ nav{
     margin-left: 280px;
 }
 
-.reviews_for_me p{
-    margin-top: 15px;
+.reviews_for_me .rev_p{
+    margin-top: 40px;
+}
+
+.reviews_for_me .misha_p{
+    margin-top: 40px;
 }
 
 .reviews_for_me img{
     margin-top: 20px;
+    opacity: 0;
+    -webkit-animation: reviews 2s forwards;
+    -o-animation: reviews 2s forwards;
+    animation: reviews 2s forwards;
 }
+
+@keyframes reviews{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+        transform: rotate(0deg);
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+        transform: rotate(360deg);
+    }
+}
+
 .contacts{
     width: 100%;
     height: 100%;
@@ -346,8 +657,26 @@ nav{
     text-align: center;
     color: #fff;
     margin-left: 210px;
-    margin-top: 50px; 
+    margin-top: 50px;
+    opacity: 0;
+    -webkit-animation: INF 3s forwards;
+    -o-animation: INF 3s forwards;
+    animation: INF 3s forwards;
+      
 }
+
+@keyframes INF{
+    from{
+        opacity: 0; 
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+
+
 
 .soobchenie h3{
     text-align: center;
@@ -360,8 +689,24 @@ nav{
 .soobchenie .input_t1{
     margin-left: 250px;
     width: 360px;
-    height: 40px; 
+    height: 40px;
+    opacity: 0;
+    -webkit-animation: input1 2s forwards;
+    -o-animation: input1 2s forwards;
+    animation: input1 2s forwards;
 }
+
+@keyframes input1{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 250px;
+    }
+}
+    
 
 .soobchenie .input_t2{
     width: 360px;
@@ -378,17 +723,53 @@ nav{
     height: 45px;
     background: none;
     color: #fff;
+    transition: all 0.2s;
+    transform: scale(1)
 }
+
+.soobchenie .input_t3:hover{
+    background-color: white;
+    color: black;
+}
+
+.soobchenie .input_t3:active{
+    transform: scale(1.2);
+}
+
 
 .soobchenie textarea{
     margin-left: 250px;
     margin-top: 17px;
     width: 750px;
+    opacity: 0;
+    -webkit-animation: textarea1 4s forwards;
+    -o-animation: textarea1 4s forwards;
+    animation: textarea1 4s forwards;
+}
+
+@keyframes textarea1{
+    from{
+        opacity: 0;
+        margin-bottom: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-bottom: 0px;
+    }
 }
 
 .kartinki{
     float: left;
     margin-left: 50px;
+    margin-bottom: 150px;
+    transition: all 0.2s;
+    transform-origin: left top;
+    transform: rotate(0deg);
+}
+
+.kartinki:hover{
+    transform: rotate(20deg);
+    
 }
 
 .vse_kartinki{
@@ -406,6 +787,28 @@ nav{
     line-height: 95px;
     padding-left: 500px;
     color: #fff;
+}
+
+.imHere{
+    width: 100%;
+    height: 250px;
+    background: url(../img/map.png) center/cover no-repeat;
+    opacity: 0;
+    transform: scale(0.5);
+    -webkit-animation: IMHERE 2s forwards;
+    -o-animation: IMHERE 2s forwards;
+    animation: IMHERE 2s forwards;
+}
+
+@keyframes IMHERE{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 
