@@ -10,41 +10,70 @@
     
     <title>Андрей Браун - веб разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
 
-<div class="preloader">
-  <div class="preloader__row">
-    <div class="preloader__item"></div>
-    <div class="preloader__item"></div>
-  </div>
-</div>
+
 
 
 <header>
     
     <nav>
-        <div class="logo">Андрей Браун</div>
-        <div class="menu"><ul>
+       <div class="container">
+           <div class="row">
+               <div class="col-xxl-2 col-md-3 col-7"><div class="logo">Андрей Браун</div></div>
+               <div class=" px-0 col-xxl-6 col-xl-7 col-md-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                <div class="menu"><ul>
+                
             <li><a href="#">Обо мне</a></li>
             <li><a href="#">Услуги</a></li>
             <li><a href="#">Кейсы</a></li>
             <li><a href="#">Прайс</a></li>
             <li><a href="#">Отзывы</a></li>
             <li><a href="#">Контакты</a></li>         
-        </ul></div>
+        </ul></div></div>
+          
+          <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+          <div class="dropdown">
+  <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Навигация
+  </a>
+
+  <ul class="dropdown-menu">
+    
+            <li><a class="dropdown-item" href="#">Обо мне</a></li>
+            <li><a class="dropdown-item" href="#">Услуги</a></li>
+            <li><a class="dropdown-item" href="#">Кейсы</a></li>
+            <li><a class="dropdown-item" href="#">Прайс</a></li>
+            <li><a class="dropdown-item" href="#">Отзывы</a></li>
+            <li><a class="dropdown-item" href="#">Контакты</a></li>
+  </ul>
+</div>
+          </div>
+           </div>
+           
+       </div>
+        
+       
     </nav>
     
 </header>
 
-
-<div class="title_menu"><div class="title__container">
+<section class="title_menu"></section>
+<div class="container h-100"><div class="row align-items-center h-100"> <div class="col-lg-6">
+  <div class="title__container">
     <h1>Привет <br>Я Андрей Браун</h1>
     <h4>Фулл стек веб - разработчик</h4>
     <input type="button" value="Обо мне">
     <input type="button" value="Мои работы">
-</div></div>
+    </div>
+</div>
+</div>
+</div>
+
 
 <main>
 <section>
@@ -53,10 +82,10 @@
  <hr>
   <img src="img/myphoto.png" alt="">
   
-    <article>
+    
    <p class="about_me_p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nesciunt aliquam expedita, quidem aspernatur velit blanditiis vitae commodi praesentium sit at veniam a possimus atque. Et distinctio eius veniam assumenda!</p>
    <p class="about_me_p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reprehenderit facilis sapiente, deserunt sed sint neque maiores esse quasi nulla ipsam itaque sunt, praesentium doloremque.</p>
-   </article>
+   
    
    <input type="button" value="Скачать резюме" class="download_rezume">                           
 </div></div>
@@ -67,7 +96,7 @@
  <h2>ЧТО Я УМЕЮ</h2>
   <hr>
   
-  <article>
+  
   
   
    <div class="skills">
@@ -97,7 +126,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit a at impedit voluptates modi quas cupiditate earum eligendi!</p>
         </div>
         
-    </article>
+    
         
      <div class="clear"></div>  
              
@@ -109,7 +138,7 @@
 <div class="cases"><div class="price">
    <h2>КЕЙСЫ</h2>
    <hr>
-   <article>
+   
    <p class="plorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, dolorum?</p>
    <img src="img/photo.png" alt="">
    
@@ -123,7 +152,7 @@
     <div class="div_nameProject"><h4>Название проекта</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit unde laudantium sed, dignissimos qui eveniet voluptas nostrum quo, libero ea facere cumque alias molestiae in aliquid. Repellat quisquam repudiandae consequuntur iusto perspiciatis nesciunt magni? Id!</p> 
     </div> 
-    </article>
+    
 
 <article>
 <div class="raschet_stoimosti"><h2>Расчет стоимости</h2>
@@ -168,7 +197,7 @@
    <h2>НЕМНОГО СТАТИСТИКИ</h2>
    <hr>
    
-   <article>
+   
    <div class="statist">
        <img src="img/logo1.png" alt="">
        <h3>120</h3>
@@ -193,7 +222,7 @@
         <p>НАГРАД ПОЛУЧЕНО</p>
     </div> 
     <div class="clear"></div> 
-    </article> 
+    
            
 </div></div>
 </section>
@@ -203,10 +232,10 @@
    <h2>ОТЗЫВЫ</h2>
    <hr>
    <img src="img/mihail.png" alt="">
-   <article>
+   
    <p class="rev_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore deserunt explicabo officiis odit aut voluptas nesciunt eligendi iusto doloribus earum!</p>
    <p class="misha_p">Михаил, Ген директор ПАО "Газпром".</p> 
-   </article>
+   
     
 </div></div>
 </section>
@@ -215,7 +244,7 @@
 <div class="contacts"><div class="my_contacts">
     <h2>МОИ КОНТАКТЫ</h2>
    <hr>
-   <article>
+   
    <p class="textLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam iure et ipsum quod aliquid, itaque fugiat, quos nulla? Explicabo, blanditiis.</p>
    <div class="inf">
        <img src="img/geo.png" alt="">
@@ -262,7 +291,7 @@
         <div class="clear"></div>
       </div>
       
-      </article>
+      
     </div>
     
 </div>
@@ -276,6 +305,6 @@
    
     <p>CopyrightⒸ 2021 Андрей Браун. Design by Web</p>
 </footer>
-
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
