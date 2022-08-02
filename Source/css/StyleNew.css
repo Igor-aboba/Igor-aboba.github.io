@@ -680,11 +680,21 @@ contacts_inputs .input2{
     }
 }
 
+.map img{
+    display: block;
+    width: 100%;
+}
 
+.konec{
+    background: #354051;
+    height: 94px;
+}
 
-
-
-
+.Pkonec{
+    text-align: center;
+    line-height: 94px;
+    color: white;
+}
 
 
 
