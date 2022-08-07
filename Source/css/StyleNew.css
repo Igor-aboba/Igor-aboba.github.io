@@ -5,7 +5,6 @@ body{
 
 main{
     width: 100%;
-    height: 100%;
 }
 
 
@@ -132,7 +131,7 @@ nav{
 
 .main{
      width: 100%;
-    height: 100%;
+    height: 100vh;
     background: url(../img/boy.png) 100% 90%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;   
 }
 
@@ -213,6 +212,25 @@ nav{
     padding-bottom: 100px;
 }
 
+.about_me_container p{
+    opacity: 0;
+    -webkit-animation: aboutMe_p 1.5s forwards;
+    -o-animation: aboutMe_p 1.5s forwards;
+    animation: aboutMe_p 1.5s forwards;
+    
+}
+
+@keyframes aboutMe_p{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
 .about_me_container img{
     display: block;
     margin: 0 auto;
@@ -259,8 +277,19 @@ nav{
     padding-left: 18px;
     color: black;
     text-decoration: none;
+    transform: scale(1);
+    transition: all 0.2s;
 }
 
+.about_me_container a:hover{
+    background: #344051;
+    color: white;
+}
+
+.about_me_container a:active{
+    transform: scale(1.2);
+    
+}
 
 
 .i_can{
@@ -295,6 +324,41 @@ nav{
     margin-bottom: 20px;
     height: 40px;
 }
+
+.skills{
+    opacity: 0;
+    -webkit-animation: Skills 1s ease forwards;
+    -o-animation: Skills 1s ease forwards;
+    animation: Skills 1s ease forwards;
+}
+
+.skills:nth-child(1){
+    animation-delay: 0.4s;
+}
+
+.skills:nth-child(2){
+    animation-delay: 1s;
+}
+
+.skills:nth-child(3){
+    animation-delay: 1.6s;
+}
+
+.skills:nth-child(4){
+    animation-delay: 2.2s;
+}
+
+@keyframes Skills{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
 
 .skills h3{
     font-size: 18px;
@@ -366,6 +430,16 @@ nav{
     font-size: 20px;
     border-radius: 8px;
     text-decoration: none;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.div_case a:hover{
+    background-color: dodgerblue;
+}
+
+.div_case a:active{
+    transform: scale(1.2);
 }
 
 .div_nameProject h4{
@@ -374,7 +448,7 @@ nav{
 }
 
 .div_nameProject p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .stoimost{
@@ -431,6 +505,62 @@ nav{
     background:  url(../img/select.png) 98% 54%/auto no-repeat, #eee;
 }
 
+
+.Ss1{
+    opacity: 0;
+    -webkit-animation: Ss1 2s forwards;
+    -o-animation: Ss1 2s forwards;
+    animation: Ss1 2s forwards;
+}
+
+@keyframes Ss1{
+    from{
+       opacity: 0; 
+       margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+       margin-left: 0px;
+    }
+}
+
+
+.Ss2{
+    opacity: 0;
+    -webkit-animation: Ss2 2s forwards;
+    -o-animation: Ss2 2s forwards;
+    animation: Ss2 2s forwards;
+}
+
+@keyframes Ss2{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+.Ss3{
+    opacity: 0;
+    -webkit-animation: Ss3 2s forwards;
+    -o-animation: Ss3 2s forwards;
+    animation: Ss3 2s forwards;
+}
+
+@keyframes Ss3{
+    from{
+       opacity: 0; 
+       margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+       margin-left: 0px;
+    }
+}
+
 .sroki, .price{
     margin-bottom: 0px;
     font-size: 21px;
@@ -455,8 +585,16 @@ nav{
     background-color: cadetblue;
     height: 40px;
     width: 200px;
-    border: 1px solid aquamarine;
-    border-radius: 5px
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.calculator_footer button:hover{
+    background-color: forestgreen;
+}
+
+.calculator_footer button:active{
+    transform: scale(1.2);
 }
 
 .statistic{
@@ -500,6 +638,22 @@ nav{
 .statist p{
     font-size: 17px;
     font-weight: 500;
+}
+
+.statist{
+    opacity: 0;
+    -webkit-animation: Statist 2s forwards;
+    -o-animation: Statist 2s forwards;
+    animation: Statist 2s forwards;
+}
+
+@keyframes Statist{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .reviews_container{
@@ -587,6 +741,22 @@ nav{
     font-size: 16px;
 }
 
+.inf{
+    opacity: 0;
+    -webkit-animation: Ainf 2s forwards;
+    -o-animation: Ainf 2s forwards;
+    animation: Ainf 2s forwards;
+}
+
+@keyframes Ainf{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .contacts_container h3{
     margin-top: 40px;
     text-align: center;
@@ -602,9 +772,28 @@ nav{
     font-size: 16px;
     width: 100%;
     padding-left: 15px;
+    opacity: 0;
+    transition: all 0.2s;
+    -webkit-animation: ContInput 1s forwards;
+    -o-animation: ContInput 1s forwards;
+    animation: ContInput 1s forwards;
 }
 
-contacts_inputs .input2{
+
+@keyframes ContInput{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+
+
+.contacts_inputs .Cinput2{
     float: right;
 }
 
@@ -617,11 +806,27 @@ contacts_inputs .input2{
     background: rgba(220, 224, 230, 0.93);
     font-size: 16px;
     margin-bottom: 30px;
+    opacity: 0;
+    transition: all 1s;
+    -webkit-animation: Tarea 2s forwards;
+    -o-animation: Tarea 2s forwards;
+    animation: Tarea 2s forwards;
+}
+
+@keyframes Tarea{
+    from{
+        opacity: 0;
+        margin-bottom: -300px;
+    }
+    to{
+        opacity: 1;
+        margin-bottom: 0px;
+    }
 }
 
 .contacts_container input[type="button"]{
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
     background: none;
     color: white;
     border: 2px solid white;
@@ -630,6 +835,17 @@ contacts_inputs .input2{
     border-radius: 8px;
     font-size: 20px;
     margin-bottom: 76px;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.contacts_container input:hover{
+    background-color: white;
+    color: black;
+}
+
+.contacts_container input:active{
+    transform: scale(1.2);
 }
 
 .vse_kartinki a{
@@ -639,6 +855,16 @@ contacts_inputs .input2{
 
 .vse_kartinki img{
     height: 30px;
+}
+
+.kartinki{
+    transition: all 0.2s;
+    transform-origin: left top;
+    transform: rotate(0deg);
+}
+
+.kartinki:hover{
+    transform: rotate(10deg);
 }
 
 .map img{
