@@ -14,12 +14,20 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/StyleNew.css">
+    <link rel="stylesheet" href="css/loader.css">
 </head>
 <body>
 
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+
 <header>
  <nav>
-       <div class="container">
+       <div class="container" id="">
            <div class="row ">
                <div class="col-xxl-2 col-xl-3 col-lg-3 col-7">
                <div class="logo">Андрей Браун</div></div>
@@ -27,12 +35,12 @@
                <div class="px-0 col-xxl-6 col-xl-7 col-lg-9 offset-xxl-4 offset-xl-2  d-none d-lg-block">
                 <div class="menu"><ul>
                 
-            <li><a href="#">Обо мне</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Кейсы</a></li>
-            <li><a href="#">Прайс</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>         
+            <li><a href="#aboutMe">Обо мне</a></li>
+            <li><a href="#can">Услуги</a></li>
+            <li><a href="#case">Кейсы</a></li>
+            <li><a href="#price">Прайс</a></li>
+            <li><a href="#rev">Отзывы</a></li>
+            <li><a href="#cont">Контакты</a></li>         
         </ul></div></div>
           
           <div class="col-5 d-flex justify-content-center flex-column align-items-end d-lg-none">
@@ -43,12 +51,12 @@
 
   <ul class="dropdown-menu">
     
-            <li><a class="dropdown-item" href="#">Обо мне</a></li>
-            <li><a class="dropdown-item" href="#">Услуги</a></li>
-            <li><a class="dropdown-item" href="#">Кейсы</a></li>
-            <li><a class="dropdown-item" href="#">Прайс</a></li>
-            <li><a class="dropdown-item" href="#">Отзывы</a></li>
-            <li><a class="dropdown-item" href="#">Контакты</a></li>
+            <li><a class="dropdown-item" href="#aboutMe">Обо мне</a></li>
+            <li><a class="dropdown-item" href="#can">Услуги</a></li>
+            <li><a class="dropdown-item" href="#case">Кейсы</a></li>
+            <li><a class="dropdown-item" href="#price">Прайс</a></li>
+            <li><a class="dropdown-item" href="#rev">Отзывы</a></li>
+            <li><a class="dropdown-item" href="#cont">Контакты</a></li>
   </ul>
 </div>
           </div>
@@ -75,7 +83,7 @@
 </div>  
  </section>
    
-   <section class="me">
+   <section class="section me" id="aboutMe">
      
        <div class="about_me_container container ">
        <div class="row justify-content-center">
@@ -93,7 +101,7 @@
     </div></div>
    </section>
    
-  <section class="i_can">
+  <section class="section i_can" id="can">
       <div class="what_i_can container ">
       
  <h2>ЧТО Я УМЕЮ</h2>
@@ -136,13 +144,17 @@
  
   </section>  
     
-  <section class="cases">
+  <section class="section cases" id="case">
       <div class="cases_container container">
           <h2>КЕЙСЫ</h2>
    <hr>
    
    <p class="plorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste est obcaecati velit dolorum, minima asperiores nam ex accusantium! Iusto, voluptatem.</p>
-   <img src="img/photo.png" alt="">
+   
+   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/photo.png" alt="">
    <div class="row justify-content-between">
    <div class="col-12 col-md-3 col-lg-2 div_case"><h4>CLIENT:</h4>
    <p>Какая-то компания</p>
@@ -156,42 +168,86 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit unde laudantium sed, dignissimos qui eveniet voluptas nostrum quo, libero ea facere cumque alias molestiae in aliquid. Repellat quisquam repudiandae consequuntur iusto perspiciatis nesciunt magni? Id!</p> 
     </div> 
     </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/photo.png" alt="">
+   <div class="row justify-content-between">
+   <div class="col-12 col-md-3 col-lg-2 div_case"><h4>CLIENT:</h4>
+   <p>Какая-то компания</p>
+    <h4>WEBSITE:</h4>
+    <p>http://www.somedomain.com</p>
+    <a href="#"> Visit live site</a>
+    </div>
+    
+    <div class=" col-12 col-md-9 div_nameProject mt-3 mt-md-0">
+    <h4>Название проекта</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit unde laudantium sed, dignissimos qui eveniet voluptas nostrum quo, libero ea facere cumque alias molestiae in aliquid. Repellat quisquam repudiandae consequuntur iusto perspiciatis nesciunt magni? Id!</p> 
+    </div> 
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/photo.png" alt="">
+   <div class="row justify-content-between">
+   <div class="col-12 col-md-3 col-lg-2 div_case"><h4>CLIENT:</h4>
+   <p>Какая-то компания</p>
+    <h4>WEBSITE:</h4>
+    <p>http://www.somedomain.com</p>
+    <a href="#"> Visit live site</a>
+    </div>
+    
+    <div class=" col-12 col-md-9 div_nameProject mt-3 mt-md-0">
+    <h4>Название проекта</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit unde laudantium sed, dignissimos qui eveniet voluptas nostrum quo, libero ea facere cumque alias molestiae in aliquid. Repellat quisquam repudiandae consequuntur iusto perspiciatis nesciunt magni? Id!</p> 
+    </div> 
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+   
           
       </div>
   </section>
    
-   <section class="stoimost">
+   <section class="section stoimost" id="price">
        <div class="stoimost_container container">
            <h2>Расчёт стоимости</h2>
            <div class="calculator">
                      
                 <div class="Ss1">          
                <h3>Тип Сайта</h3>   
-     <select class="stoimostSelect " name="type" id="">
-         <option value="1" selected disabled>Выберите пункт</option>
-            <option value="2">Сайт-визитка</option>
-            <option value="3">Корпоративный сайт</option>
-            <option value="4">Интернет-магазин</option>
+     <select id="select1" class="stoimostSelect " name="type" id="TypeSite">
+         <option value="0" days="0" selected disabled>Выберите пункт</option>
+            <option value="1000" days="2">Сайт-визитка</option>
+            <option value="2000" days="3">Корпоративный сайт</option>
+            <option value="4000" days="4">Интернет-магазин</option>
                </select>
                </div>   
                
                <div class="Ss2">
                <h3>Дизайн</h3>
-     <select class="stoimostSelect " name="type" id="">
-         <option value="1" selected disabled>Выберите пункт</option>
-         <option value="2">Шаблонный</option>
-         <option value="3">Уникальный</option>
-         <option value="4">WOW-Дизайн</option>
+     <select id="select2" class="stoimostSelect " name="type" id="TypeSite">
+         <option value="0" days="0" selected disabled>Выберите пункт</option>
+         <option value="2000" days="2">Шаблонный</option>
+         <option value="3000" days="3">Уникальный</option>
+         <option value="4000" days="4">WOW-Дизайн</option>
                </select>
                </div>
                
                <div class="Ss3">
                <h3>Адаптивность</h3>
-     <select class="stoimostSelect " name="type" id="">
-         <option value="1" selected disabled>Выберите пункт</option>
-         <option value="2">Только ПК</option>
-         <option value="3">Только мобильный сайт</option>
-         <option value="4">ПК + Мобильный</option>
+     <select id="select3" class="stoimostSelect " name="type" id="TypeSite">
+         <option value="0" days="0" selected disabled>Выберите пункт</option>
+         <option value="2000" days="2">Только ПК</option>
+         <option value="3000" days="3">Только мобильный сайт</option>
+         <option value="4000" days="4">ПК + Мобильный</option>
                </select>
                </div>
                
@@ -218,7 +274,7 @@
        </div>
    </section> 
    
-   <section class="statistic">
+   <section class="section statistic" id="stat">
        <div class="statistic_container container">
            <h2>НЕМНОГО СТАТИСТИКИ</h2>
    <hr>
@@ -256,7 +312,7 @@
        </div>
    </section>
    
-   <section class="reviews">
+   <section class="section reviews" id="rev">
        <div class="reviews_container container">
            <h2>ОТЗЫВЫ</h2>
    <hr>
@@ -269,7 +325,7 @@
        </div></div></div>
    </section>
     
-  <section class="contacts">
+  <section class="section contacts" id="cont">
       <div class="contacts_container container">
           <h2>МОИ КОНТАКТЫ</h2>
    <hr>
@@ -354,7 +410,8 @@
     </footer>
     
     
-<script src="js/bootstrap.bundle.min.js"></script> 
-<script src="js/Calc.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/MyScript.js"></script> 
 </body>
 </html>

@@ -65,6 +65,10 @@ nav{
     
 }
 
+.menu li a.active{
+    color:crimson;
+}
+
 .menu li a:visited{
     color: #fff;
 }
@@ -72,6 +76,7 @@ nav{
 .menu li a:hover{
     color: #d17700;
 }
+
 
 .menu li a:active{
     transform: scale(1.1);
@@ -118,7 +123,6 @@ nav{
     color: #d17700;
     opacity: 1;
 }
-
 
 
 .menu li a{

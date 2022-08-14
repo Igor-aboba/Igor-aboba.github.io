@@ -1,0 +1,22 @@
+.text{
+    margin-top: 200px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+
+.red{
+    color: red;
+}
+
+/*
+.elementAnimation{
+    opacity: 0;
+}
+
+.elementAnimation .showAnimation{
+    opacity: 1;
+    transition: opacity 1s;
+}
+*/
+
+

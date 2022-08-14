@@ -1,47 +1,35 @@
-"use strict"
+$(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
 
-let arr = [
-    "Один",
-    "Два",
-    15,
-    true,
-    function(){
-        console.log("its work");
+/*$(document).ready(function(){
+ 
+    let options = {threshold: [0.5]};
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = $('.elementAnimation');
+    elements.each((i, el) => {
+       observer.observe(el); 
+    });
+    
+    
+    function onEntry (entry){
+        entry.forEach(change => {
+            if(change.isIntersecting){
+                change.target.classList.add('showAnimation');
+            }
+            
+        });
     }
-          
-          
-          
-];
+    
 
-
-let matrix = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9],
-];
-
-let age = prompt("Сколько тебе лет?")
-
-console.log(age);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+$("img").click(function(){
+    $(this).fadeOut(500, function(){
+       $(this).attr("src","img/myphoto.png").fadeIn(500);
+    });
+});   
+       
+       
+});
+*/
