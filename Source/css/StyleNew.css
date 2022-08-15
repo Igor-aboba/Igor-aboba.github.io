@@ -66,7 +66,7 @@ nav{
 }
 
 .menu li a.active{
-    color:crimson;
+    color:red !important;
 }
 
 .menu li a:visited{
@@ -331,38 +331,12 @@ nav{
 
 .skills{
     opacity: 0;
-    -webkit-animation: Skills 1s ease forwards;
-    -o-animation: Skills 1s ease forwards;
-    animation: Skills 1s ease forwards;
 }
 
-.skills:nth-child(1){
-    animation-delay: 0.4s;
+.skills.show-animation{
+    opacity: 1;
+    transition: opacity 1s;
 }
-
-.skills:nth-child(2){
-    animation-delay: 1s;
-}
-
-.skills:nth-child(3){
-    animation-delay: 1.6s;
-}
-
-.skills:nth-child(4){
-    animation-delay: 2.2s;
-}
-
-@keyframes Skills{
-    from{
-        opacity: 0;
-        margin-left: -500px;
-    }
-    to{
-        opacity: 1;
-        margin-left: 0px;
-    }
-}
-
 
 .skills h3{
     font-size: 18px;

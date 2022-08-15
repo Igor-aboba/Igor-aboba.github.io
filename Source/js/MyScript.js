@@ -44,4 +44,25 @@ $(window).scroll(() => {
     
 }); 
     
+    
+  /* Отложенная анимация */
+    
+    let options = {threshold: [1]};
+    let observer = new IntersectionObserver(onEnttry, options);
+    let elements = $('.skills');
+    elements.each((i, el) => {
+       observer.observe(el); 
+    });
+    
+   
+    
  }); 
+
+function onEntry (entry){
+    entry.forEach(change => {
+       if (change.isIntersecting){
+           change.target.classList.add('show-animation')
+       } 
+    });
+}
+
